@@ -1,0 +1,10 @@
+"""
+Crie um programa que leia o nome de uma pessoa
+e diga se ela tem "SILVA" no nome e diga onde.
+"""
+# Receber o nome
+nome = input('Digite o seu nome completo: ').lower().split(" ")
+if "silva" in nome:
+    print('O seu nome tem o sobrenome Silva!')
+else:
+    print('O seu nome não tem o sobrenome Silva!')
