@@ -1,0 +1,10 @@
+# Desenvolva um programa que pergunte a distância de uma viagem em km.
+# Calcule o preço da passagem, cobrando R$ 0,50 por km para viagens
+# de até 200 km e R$ 0,45 para viagens mais longas.
+
+# Receber a distância da viagem.
+dist = int(input('Qual a distância da viagem em km? '))
+if dist <= 200:
+    print('O preço da viagem, considerando R$ 0,50 por km, é de R$ {:.2f}'.format(dist * 0.50))
+else:
+    print('O preço da viagem, considerando R$ 0,45 por km, é de R$ {:.2f}'.format(dist * 0.45))
