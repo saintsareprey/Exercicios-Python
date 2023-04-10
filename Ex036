@@ -1,0 +1,19 @@
+# Escreva um programa para aprovar o empréstimo bancário
+# para a compra de uma casa, o salário do comprador e em
+# quantos anos ele vai pagar.
+# Calcule o valor da prestação mensal, sabendo que ela
+# não pode exceder 30% do salário ou então o empréstimo
+# será negado.
+
+# Receber dados
+emprestimo = float(input('Digite o valor do empréstimo necessário: R$ '))
+sal = float(input('Digite a renda mensal do contratante: R$ '))
+anos = float(input('Em quantos anos será pago? '))
+
+# Transformar anos em meses, calcular a prestação e verificar seu valor.
+meses = anos * 12
+prestacao = emprestimo / meses
+if prestacao < sal - sal * 0.30:
+    print('O empréstimo de R$ {:.2f} foi aprovado em prestações'
+          ' de R$ {:.2f} durante {} meses'.format(emprestimo, prestacao, meses))
+
