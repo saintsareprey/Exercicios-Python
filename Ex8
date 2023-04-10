@@ -1,0 +1,6 @@
+# Escreva um programa que leia um valor em metros
+# e o mostre convertido em cm e mm.
+num = float(input('Digite um valor em m: '))
+print('O valor {}m  foi convertido em:\n'
+      'Centímetros: {}cm\n'
+      'Milímetros: {}cm'.format(num, num * 100, num * 1000))
