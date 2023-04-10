@@ -1,0 +1,32 @@
+"""
+Crie um programa que leia o nome completo de uma pessoa e mostre:
+  O nome com todas as letras maiúsculas
+  O nome com todas as letras minúsculas
+  Quantas letras totais sem considerar espaços.
+  Quantas letras tem o primeiro nome
+"""
+
+# Receber o nome
+nome = input('Digite o seu nome completo: ')
+
+# Atribuir tudo maiúsculo a uma variável
+nome_maius = nome.upper()
+
+# Atribuir tudo minúsculo a uma variável
+nome_minus = nome.lower()
+
+# Atribuir sem espaços a uma variável
+sem_espacos = nome.replace(" ", "")
+# Outra maneira: ('''sem_espacos = len(nome) - nome.count(" ")''')
+# subtraindo o número total de letras pelo número de espaços.
+letras = len(sem_espacos)
+
+# Dividir, analisar o primeiro conjunto e printar o resultado.
+dividir = nome.split(" ")
+prim_nome = len(dividir[0])
+
+print('Seu nome completo com: \n'
+      'Letras maiúsculas: {}\n'
+      'Letras minúsculas: {}\n'
+      'Letras totais: {}\n'
+      'Qtd de letras no primeiro nome: {} letras em {}.'.format(nome_maius , nome_minus, letras, prim_nome, dividir[0]))
