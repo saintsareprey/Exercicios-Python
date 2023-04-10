@@ -1,0 +1,16 @@
+# Faça um programa que leia uma frase pelo teclado e diga:
+# Quantas x aparece a letra A:
+# Em que posição ela aparece na primeira vez.
+# Em que posição ela aparece a última vez.
+
+# Receber a frase, transformar em minúsculas e retirar espaços.
+frase = input('Digite uma frase: ').lower().replace(" ", "")
+
+# Quantas x aparece a letra A:
+print('A letra "A" aparece {} vezes na frase.'.format(frase.count("a")))
+
+# Em que posição ela aparece na primeira vez.
+print('A letra "A" aparece primeiramente na {}° posição.'.format(frase.find("a", 0) + 1))
+
+# Em que posição ela aparece na última vez.
+print('A letra "A" aparece ultimamente na {}° posição'.format(frase.find("a", -1) + 1))
