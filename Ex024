@@ -1,0 +1,16 @@
+# Crie um programa que leia o nome de uma cidade
+# e diga se ela começa ou não com o nome "SANTO".
+
+# Receber o nome da cidade
+cidade = input('Digite o nome de uma cidade: ')
+
+# Trocar todas as letras para um padrão fácilmente reconhecível
+# e separar as palavras por espaço, para que o [0] reconheça a
+# primeira palavra, e não somente a primeira letra.
+cid_minus = cidade.lower().split(" ")
+
+# Condicionar a primeira palavra a ter a sequência "santo".
+if "santo" in cid_minus[0]:
+    print('Essa cidade tem santo no começo do nome.')
+else:
+    print('Essa cidade NÃO tem santo no começo do nome.')
