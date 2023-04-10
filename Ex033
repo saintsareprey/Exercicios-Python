@@ -1,0 +1,23 @@
+# Faça um programa que leia três números e
+# mostre qual o maior e qual é o menor.
+
+# Receber os números e convertê-los em float.
+a = float(input('Digite o primeiro número: '))
+b = float(input('Digite o segundo número: '))
+c = float(input('Digite o terceiro número: '))
+
+# Analisar os números
+menor_num = a
+if b < a and b < c:
+    menor_num = b
+if c < a and c < b:
+    menor_num = c
+
+maior_num = a
+if b > a and b > c:
+    maior_num = b
+if c > a and c > b:
+    maior_num = c
+
+print('Menor número: {}\n'
+      'Maior número: {}\n'.format(menor_num, maior_num))
