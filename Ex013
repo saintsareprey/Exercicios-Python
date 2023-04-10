@@ -1,0 +1,4 @@
+# Faça um algoritmo que leia o salário de um funcionário
+# e mostre seu novo salário, com 15% de aumento.
+sal = float(input('Digite o salário do funcionário: R$ '))
+print('O salário R$ {:.2f} com aumento de 15% tem valor de R$ {:.2f}'.format(sal, sal + sal * 0.15))
