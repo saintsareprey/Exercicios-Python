@@ -1,0 +1,30 @@
+# Faça um programa que leia o ano de nascimento de um
+# jovem e informe, de acordo com sua idade:
+# - Se ele ainda vai se alistar ao serviço militar.
+# - Se é hora de se alistar
+# - Se já passou do tempo do alistamento
+# Seu programa também deverá mostrar o tempo que falta
+# ou passou do prazo.
+
+# Importar o módulo date da biblioteca datetime para verificar o ano atual
+from datetime import date
+
+# Receber o ano de nascimento do usuário.
+ano = int(input('Digite o seu ano de nascimento: '))
+
+# Atribuir o ano atual a uma variável utilizável
+atual = date.today()
+ano_atual = atual.year
+
+# Calcular a idade para utilização em lógica
+idade = ano_atual - ano
+
+# Verificar se o usuário tem menos de 18 anos.
+if ano_atual - ano < 18:
+    print('Você terá que se alistar em {} ano/s'.format(18 - idade))
+# Verificar se o usuário tem 18 anos.
+elif ano_atual - ano == 18:
+    print('Você tem 18 anos e deverá se alistar')
+# Verificar se o usuário tem mais de 18 anos.
+else:
+    print('Você já deveria ter se alistado a {} ano/s atrás.'.format(idade - 18))
