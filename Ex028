@@ -1,0 +1,18 @@
+# Escreva um programa que faça o computador pensar
+# em um N° inteiro de 0 a 5 e o usuário tentar descobrir
+# qual foi que ele pensou.
+# O programa deve constar na tela se o usuário venceu ou perdeu.
+
+# Utilizar randint do módulo random para o computador escolher um número de 0 a 5:
+from random import randint
+comp = randint(0, 5)
+
+# Receber o chute do usuário:
+escolha = int(input('Digite um número de 0 a 5: '))
+if 0 <= escolha <= 5:
+    if comp == escolha:
+        print('Você acertou!')
+    else:
+        print('\033[0;31mVocê errou, o número escolhido foi\033[m \033[1;32m{}, e não {}.'.format(comp, escolha))
+else:
+    print("O número não compreende os requerimentos.")
