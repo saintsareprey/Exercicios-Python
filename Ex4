@@ -1,0 +1,27 @@
+# Faça um programa que leia algo pelo teclado e mostre na telao seu
+# tipo primitivo e todas as informações possíveis sobre ele.
+algo = input('Digite algo: ')
+#tipo primitivo
+tipo = algo.__class__
+print('Qual o tipo de dado? {}'.format(tipo))
+#tem espaços?
+esp = algo.isspace()
+print('Tem espaços? {}'.format(esp))
+#número?
+num = algo.isnumeric()
+print('Número? {}'.format(num))
+#alfabético?
+alfa = algo.isalpha()
+print('É letra alfabética? {}'.format(alfa))
+#alfanumérico?
+alfanum = algo.isalnum()
+print('É alfa-númerico? {}'.format(alfanum))
+#maiúsculas?
+maius = algo.isupper()
+print('Maiúscula? {}'.format(maius))
+#minúsculas?
+minus = algo.islower()
+print('Minúscula? {}'.format(minus))
+#capitalizada?
+c = algo.istitle()
+print('É capitalizada? {}'.format(c))
