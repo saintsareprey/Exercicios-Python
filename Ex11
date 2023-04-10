@@ -1,0 +1,6 @@
+# Um programa que leia a largura e a altura de uma parede em mestros,
+# calcule a sua área e quantidade de tinta necessária para pintá-la,
+# sabendo que cada L de tinta pinta uma área de 2 m².
+larg = float(input('Digite a largura da parede em m: '))
+alt = float(input('Digite a altura da parede em m: '))
+print('Para pintar uma parede com área de {}m², serão necessários {}L de tinta.'.format(larg * alt, (larg * alt) / 2))
