@@ -1,0 +1,30 @@
+"""
+Faça um programa que leia um n° de 0 a 9999 e mostre na tela cada um dos dígitos separados
+Ex: Digite um número: 1834
+- unidade: 4        - centena: 8
+- dezena: 3         - milha: 1
+"""
+# Receber o número
+num = int(input('Digite um número de 0 a 9999: '))
+
+# Condicionar o número a ser igual/maior a 0 e igual/menor a 9999.
+if 0 <= num <= 9999:
+    # Transformar o número em string.
+    num_string = str(num)
+    # Isolar a unidade.
+    unidade = num_string[3:4]
+    # Isolar a dezena.
+    dezena = num_string[2:3]
+    # Isolar a centena.
+    centena = num_string[1:2]
+    # Isolar o milhar.
+    milha = num_string[0:1]
+    # Printar o resultado.
+    print('O número {} tem:\n'
+          'Unidade: {}\n'
+          'Dezena: {}\n'
+          'Centena: {}\n'
+          'Milhar: {}\n'.format(num_string, unidade, dezena, centena, milha))
+else:
+    # Erro de condição.
+    print('O número não compreende os requerimentos.')
